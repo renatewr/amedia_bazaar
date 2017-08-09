@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/therealice/bazaar-test.git"
+    "url": "git+https://github.com/renatewr/amedia_bazaar.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/therealice/bazaar-test/issues"
+    "url": "https://github.com/renatewr/amedia_bazaar/issues"
   },
-  "homepage": "https://github.com/therealice/bazaar-test#readme",
+  "homepage": "https://github.com/renatewr/amedia_bazaar#readme",
   "devDependencies": {
     "http-server": "^0.9.0"
   }
