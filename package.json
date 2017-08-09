@@ -19,5 +19,8 @@
   "homepage": "https://github.com/renatewr/amedia_bazaar#readme",
   "devDependencies": {
     "http-server": "^0.9.0"
+  },
+  "dependencies": {
+    "http-server": "^0.9.0"
   }
 }
