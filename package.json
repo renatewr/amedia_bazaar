@@ -1,0 +1,23 @@
+{
+  "name": "bazaar-test",
+  "version": "1.0.0",
+  "description": "Bazaar Test",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealice/bazaar-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therealice/bazaar-test/issues"
+  },
+  "homepage": "https://github.com/therealice/bazaar-test#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
