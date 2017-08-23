@@ -1,12 +1,14 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <script src="https://services.snapmaster.api.no/api/bazaar/assets/v2/bazaar.js" async></script>
+  <script src="https://services.api.no/api/bazaar/assets/v2/bazaar.js" async></script>
     <bazaar-config>
         <script type="application/bazaarscript">
         {
           "publication": "www.jbl.no",
           "localPercentage": 30,
-          "positions": ["toppbanner"]
+          "positions": ["toppbanner"],
+          "localLazyLoad": true
         }
     </script>
     </bazaar-config>
@@ -40,6 +42,7 @@ body{
     width: 50vw;
   }
 </style>
+<title>Siste nytt · Jbl.no</title>
 </head>
 <body>
 <bazaar-ad position="toppbanner">
