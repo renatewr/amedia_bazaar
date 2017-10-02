@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://services.api.no/api/bazaar/assets/v2/bazaar.js" async></script>
+  <script src="http://bed.api.no/api/bazaar/assets/v2/bazaar.js" async></script>
     <bazaar-config>
         <script type="application/bazaarscript">
         {
-          "publication": "www.jbl.no",
-          "localPercentage": 99,
-          "positions": ["toppbanner"],
+          "publication": "www.avisnavn.no",
+          "localPercentage": 0,
+          "positions": ["toppbanner", "challengedeck"],
           "localLazyLoad": true
         }
     </script>
@@ -42,26 +42,25 @@ body{
     width: 50vw;
   }
 </style>
-<title>Siste nytt · Jbl.no</title>
+<title>Bazaar - test</title>
 </head>
 <body>
-<bazaar-ad position="toppbanner">
-    <div id="6430872"></div>
 
+<bazaar-ad position="toppbanner">
+<div id="6430872"></div>
     <script type="application/bazaarscript">
         (function() {
             var placement = 6430872;
-
-            console.log(window.ADTECH);
             if (typeof window !== 'undefined' && typeof window.ADTECH !== 'undefined') {
                 window.ADTECH.config.placements[placement] = {
                     position : 'toppbanner',
                     placement : placement,
                     sizeid : 3218
                 };
+                window.ADTECH.loadAd({ placement: 6430872, debugMode: true });
 
-                window.ADTECH.enqueueAd(placement);
-                window.ADTECH.executeQueue();
+                //window.ADTECH.enqueueAd(placement);
+                //window.ADTECH.executeQueue();
             }
         })();
     </script>
@@ -93,9 +92,9 @@ Aenean lobortis erat ac sapien cursus eleifend. Aenean sed ornare risus, sit ame
 
 Donec ut fringilla lorem. Integer vitae ligula eget elit maximus viverra quis sodales neque. Praesent ut velit non eros varius gravida. Curabitur in velit non libero condimentum imperdiet. Fusce lacus augue, elementum a mi sed, pellentesque vestibulum dolor. Sed vestibulum interdum ante id pharetra. Quisque quis viverra tortor, et efficitur erat. Ut et placerat justo. In non lobortis nisl, at blandit ligula. Cras convallis ipsum metus, ut mollis risus viverra ut. Sed ac fringilla purus. Nullam eget nunc diam. Nunc fringilla a felis a cursus. Duis sed lorem et nisi finibus gravida quis non lectus. Aliquam convallis sapien nec mollis sollicitudin. In viverra sit amet diam eu vestibulum.
 </div>
-<bazaar-ad position="midtbanner">
-    <div id="6430876"></div>
 
+<bazaar-ad position="challengedeck">
+<div id="6430876"></div>
     <script type="application/bazaarscript">
         (function() {
             var placement = 6430876;
@@ -108,8 +107,9 @@ Donec ut fringilla lorem. Integer vitae ligula eget elit maximus viverra quis so
                     sizeid : 3218
                 };
 
-                window.ADTECH.enqueueAd(placement);
-                window.ADTECH.executeQueue();
+                //window.ADTECH.enqueueAd(placement);
+                //window.ADTECH.executeQueue();
+                window.ADTECH.loadAd({ placement: 6430876, debugMode: true });
             }
         })();
     </script>
@@ -168,8 +168,8 @@ Aenean lobortis erat ac sapien cursus eleifend. Aenean sed ornare risus, sit ame
 
 Donec ut fringilla lorem. Integer vitae ligula eget elit maximus viverra quis sodales neque. Praesent ut velit non eros varius gravida. Curabitur in velit non libero condimentum imperdiet. Fusce lacus augue, elementum a mi sed, pellentesque vestibulum dolor. Sed vestibulum interdum ante id pharetra. Quisque quis viverra tortor, et efficitur erat. Ut et placerat justo. In non lobortis nisl, at blandit ligula. Cras convallis ipsum metus, ut mollis risus viverra ut. Sed ac fringilla purus. Nullam eget nunc diam. Nunc fringilla a felis a cursus. Duis sed lorem et nisi finibus gravida quis non lectus. Aliquam convallis sapien nec mollis sollicitudin. In viverra sit amet diam eu vestibulum.
 </div>
+<div id="6430879"></div>
 <bazaar-ad position="midtbanner">
-    <div id="6430879"></div>
 
     <script type="application/bazaarscript">
         (function() {
@@ -179,12 +179,12 @@ Donec ut fringilla lorem. Integer vitae ligula eget elit maximus viverra quis so
             if (typeof window !== 'undefined' && typeof window.ADTECH !== 'undefined') {
                 window.ADTECH.config.placements[placement] = {
                     position : 'midtbanner',
-                    placement : placement,
                     sizeid : 3218
                 };
 
-                window.ADTECH.enqueueAd(placement);
-                window.ADTECH.executeQueue();
+                //window.ADTECH.enqueueAd(placement);
+                //window.ADTECH.executeQueue();
+                window.ADTECH.loadAd({ placement: 6430879, debugMode: true });
             }
         })();
     </script>
