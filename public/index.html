@@ -7,7 +7,7 @@
         {
           "publication": "www.jarlsbergavis.no",
           "localPercentage": 0,
-          "positions": ["toppbanner", "skyskraper", "challengedeck", "midtbanner"]
+          "positions": ["toppbanner", "skyskraper", "challengedeck", "midtbanner", "artikkelboard"]
         }
     </script>
     </bazaar-config>
@@ -167,27 +167,7 @@ Aenean lobortis erat ac sapien cursus eleifend. Aenean sed ornare risus, sit ame
 
 Donec ut fringilla lorem. Integer vitae ligula eget elit maximus viverra quis sodales neque. Praesent ut velit non eros varius gravida. Curabitur in velit non libero condimentum imperdiet. Fusce lacus augue, elementum a mi sed, pellentesque vestibulum dolor. Sed vestibulum interdum ante id pharetra. Quisque quis viverra tortor, et efficitur erat. Ut et placerat justo. In non lobortis nisl, at blandit ligula. Cras convallis ipsum metus, ut mollis risus viverra ut. Sed ac fringilla purus. Nullam eget nunc diam. Nunc fringilla a felis a cursus. Duis sed lorem et nisi finibus gravida quis non lectus. Aliquam convallis sapien nec mollis sollicitudin. In viverra sit amet diam eu vestibulum.
 </div>
-<div id="6430879"></div>
-<bazaar-ad position="midtbanner">
-
-    <script type="application/bazaarscript">
-        (function() {
-            var placement = 6430879;
-
-            console.log(window.ADTECH);
-            document.write('<p>Jeg tror ikke postscribe fungerer som vi tror.</p>');
-            if (typeof window !== 'undefined' && typeof window.ADTECH !== 'undefined') {
-                window.ADTECH.config.placements[placement] = {
-                    position : 'midtbanner',
-                    sizeid : 3218
-                };
-
-                //window.ADTECH.enqueueAd(placement);
-                //window.ADTECH.executeQueue();
-                window.ADTECH.loadAd({ placement: 6430879, debugMode: true });
-            }
-        })();
-    </script>
+<bazaar-ad position="artikkelboard">
 </bazaar-ad>
 </body>
 </html>
