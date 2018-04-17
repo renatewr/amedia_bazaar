@@ -2,6 +2,33 @@
 <html>
 <head>
   
+    <bazaar-config>
+        <script type="application/bazaarscript">
+        {
+          "publication": "www.jarlsbergavis.no",
+          "localPercentage": 0,
+          "positions": ["toppbanner", "skyskraper", "challengedeck", "midtbanner", "artikkelboard"]
+        }
+    </script>
+    </bazaar-config>
+    <bazaar-local>
+        <script type="application/bazaarscript" src="//aka-cdn.adtech.de/dt/common/DAC.js"></script>
+        <script type="application/bazaarscript">
+        (function() {
+            if (typeof window !== 'undefined' && typeof window.ADTECH !== 'undefined') {
+                ADTECH.config.page = {
+                    protocol: 'https',
+                    server: 'secserv.adtech.de',
+                    network: '1361',
+                    pageid: 0,
+                    params: {
+                        loc: 100
+                    }
+                };
+            }
+        })();
+    </script>
+    </bazaar-local>
 <style>
 body{
   display: flex;
@@ -15,10 +42,10 @@ body{
   }
 </style>
 <title>Bazaar - test</title>
-<meta name="apple-itunes-app" content="app-id=1007623705"/>
-<meta name="apple-mobile-web-app-title" content="amta.no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
-<meta property="og:site_name" content="amta.no"/>
+<meta name="apple-itunes-app" content="app-id=1007623705">
+<meta name="apple-mobile-web-app-title" content="amta.no">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta property="og:site_name" content="amta.no">
 </head>
 <body>
 
